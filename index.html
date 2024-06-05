@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Kampus Baru</title>
+    <!-- Memasukkan style.css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Menambahkan favicon -->
+    <link rel="icon" href="assets/logo1.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="fixed-header">
+      <div class="logo">
+        <img src="assets/logo1.png" alt="Logo" />
+        <span class="logo-text">Kampus Baru</span>
+      </div>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#facilitation">Our Facilitation</a>
+        <a href="#achievement">Achievement</a>
+        <a href="#message-us">Message Us</a>
+      </nav>
+    </header>
+    <main>
+      <section class="welcomeSection">
+        <h2 id="welcomeName">Hai, Dinda. Welcome</h2>
+        <p>
+          Welcome to Kampus Baru, a beacon of learning and innovation. At Kampus
+          Baru, we pride ourselves on fostering an environment where students
+          are encouraged to explore, innovate, and excel. With state-of-the-art
+          facilities, experienced faculty, and a vibrant campus community, we
+          are dedicated to providing a holistic education that prepares our
+          students for the challenges of tomorrow. Join us at Kampus Baru, where
+          your journey towards excellence begins.
+        </p>
+      </section>
+    </main>
+    <section id="facilitation">
+      <h2 class="facilitationHeader">Our Facilitation</h2>
+      <div class="facilitation">
+        <div>
+          <img src="assets/lab.jpg" alt="Lab" />
+          <p>LAB</p>
+        </div>
+        <div>
+          <img src="assets/perpus.jpg" alt="Perpus" />
+          <p>LIBRARY</p>
+        </div>
+        <div>
+          <img src="assets/kelas.png" alt="Kelas" />
+          <p>CLASS</p>
+        </div>
+      </div>
+    </section>
+    <section id="achievement" class="achievement">
+      <h2>Achievement</h2>
+      <div class="achievement-list">
+        <div class="achievement-item">
+          <img src="assets/sertif1.png" alt="Award 1" />
+          <p>Best School 2023</p>
+        </div>
+        <div class="achievement-item">
+          <img src="assets/sertif2.png" alt="Award 2" />
+          <p>Top Science Fair 2022</p>
+        </div>
+        <div class="achievement-item">
+          <img src="assets/sertif3.png" alt="Award 3" />
+          <p>Excellence in Teaching 2021</p>
+        </div>
+      </div>
+    </section>
+    <section id="message-us" class="message-us">
+      <div class="form-container">
+        <h2>Message Us</h2>
+        <form id="myForm" onsubmit="return submitForm()">
+          <div class="form-group">
+            <label for="nama">Nama: </label>
+            <input
+              type="text"
+              id="nama"
+              name="nama"
+              placeholder="Masukkan Nama"
+            />
+          </div>
+          <div class="form-group">
+            <label for="tanggal-lahir">Tanggal Lahir: </label>
+            <input type="date" id="tanggal-lahir" name="tanggal-lahir" />
+          </div>
+          <div class="form-group">
+            <label for="jenis-kelamin">Jenis Kelamin: </label>
+            <label class="radio-label">
+              <input type="radio" name="jenis-kelamin" value="Laki-Laki" />
+              Laki-Laki
+            </label>
+            <label class="radio-label">
+              <input type="radio" name="jenis-kelamin" value="Perempuan" />
+              Perempuan
+            </label>
+          </div>
+          <div class="form-group">
+            <label for="pesan">Pesan</label>
+            <textarea
+              name="pesan"
+              id="pesan"
+              rows="4"
+              placeholder="pesan"
+            ></textarea>
+          </div>
+          <div class="form-group">
+            <input type="submit" value="Submit" />
+          </div>
+        </form>
+      </div>
+      <div class="current-info">
+        <p>Nama:</p>
+        <p>Tanggal lahir:</p>
+        <p>Jenis Kelamin:</p>
+        <p>Pesan:</p>
+      </div>
+    </section>
+    <footer>Created by Dinda Chesar</footer>
+    <script src="js/script.js"></script>
+  </body>
+</html>

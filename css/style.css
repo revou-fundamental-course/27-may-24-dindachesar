@@ -1,0 +1,316 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #29363b;
+  color: #ffffff;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 10px;
+  background-color: rgba(80, 112, 255, 0.5);
+  z-index: 1000;
+}
+
+.fixed-header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.logo img {
+  height: 50px;
+  border-radius: 50px;
+}
+
+.logo-text {
+  margin-left: 15px;
+  font-size: 2em;
+  color: white;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 5px;
+  margin-right: 30px;
+}
+
+nav a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  border-right: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px 5px;
+}
+
+nav a:hover {
+  color: aqua;
+}
+
+.welcomeSection {
+  height: 78vh;
+  border-bottom: 1px solid white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: url("/assets/kampus.jpg") no-repeat center center/cover;
+  color: white;
+  margin-top: 80px;
+}
+
+.welcomeImg {
+  margin-top: 20px;
+}
+
+.welcomeImg img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+section {
+  padding: 40px;
+}
+
+.facilitationHeader {
+  margin-top: 40px;
+}
+
+.facilitation {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.facilitation div {
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.facilitation div:hover {
+  transform: scale(1.2);
+}
+
+.facilitation img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.achievement {
+  padding: 55px;
+  background-color: #f39797;
+}
+
+.achievement-list {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 40px;
+}
+
+.achievement-item {
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.achievement-item:hover {
+  transform: scale(1.2);
+}
+
+.achievement-item img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.message-us {
+  border-top: 1px solid #f39797;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 40px;
+}
+
+.message-us .form-container,
+.message-us .current-info {
+  width: 48%;
+}
+
+.form-group {
+  margin-bottom: 10px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-group input[type="radio"] {
+  margin-left: 10px;
+}
+
+.form-group .radio-label {
+  margin-right: 10px;
+  color: #ffffff;
+}
+
+.form-group input[type="submit"] {
+  width: 100%;
+  padding: 10px 0;
+  background-color: #00e5f3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  box-shadow: 0 0 5px #00e5f3;
+}
+
+.form-group input[type="submit"]:hover {
+  background-color: #00c5d3;
+  box-shadow: 0 0 15px 5px #ffffff;
+}
+
+.current-info {
+  border: 1px solid #414040;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #383838;
+  margin: 90px auto;
+  height: 340px;
+  max-width: 700px;
+}
+
+footer {
+  padding: 40px;
+  text-align: end;
+  background-color: #f39797;
+  color: #ffffff;
+  border-top: 1px solid #f39797;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .logo {
+    margin-left: 20px;
+  }
+
+  nav {
+    margin-right: 10px;
+  }
+
+  nav a {
+    padding: 10px 3px;
+    font-size: 0.9em;
+  }
+
+  .welcomeSection {
+    height: auto;
+    margin-top: 60px;
+    padding: 20px;
+  }
+
+  .facilitation {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .facilitation div {
+    margin-bottom: 20px;
+  }
+
+  .achievement-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .achievement-item {
+    margin-bottom: 20px;
+  }
+
+  .message-us .form-container,
+  .message-us .current-info {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .current-info {
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 1.5em;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+  .facilitation img,
+  .achievement-item img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .form-group input[type="submit"] {
+    font-size: 0.9rem;
+  }
+
+  .current-info {
+    padding: 10px;
+  }
+
+  footer {
+    padding: 20px;
+  }
+}
